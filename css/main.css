@@ -1,0 +1,103 @@
+/*
+Colors:
+#DDD
+#F5F5F5
+#6495ED
+*/
+
+* {
+    font-family: 'Arial', 'Helvetica','Helvetica Neue', 'sans-serif';
+}
+
+body {
+    max-width: 90%;
+    margin: 5rem auto 5rem auto;
+}
+
+
+
+h3 {
+    font-weight: 400;
+    display: block;
+    padding: 1rem;
+    background-color: white;
+    border:#DDD solid 2px;
+    position: absolute;
+    top: -3rem;
+    left: 1.5rem;
+}
+
+form {
+    position: relative;
+    background-color: #f5f5f5;
+    padding-top: 4rem;
+    border:#DDD solid 2px;
+
+}
+
+.box {
+    padding: 0.5rem 3rem;
+}
+
+form .box label {
+    display: block;
+    padding-bottom: 0.5rem;
+}
+
+form .box input {
+    padding: 0.5rem;
+    border:#DDD solid 2px;
+}
+
+form input, textarea {
+    width:100%;
+    border:#DDD solid 2px;  
+}
+
+
+form input.submit-data {
+    display: inline-block;
+    background-color:#6495ED;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 2rem 0 2rem 0;
+}
+
+     
+
+/***************************************************
+   Responsive Design
+***************************************************/
+/* Tablet between 25rem and 40rem */
+@media only screen and (min-width: 25rem) {
+    .fullname, .email {
+        width: 48%;
+        display: inline-block;
+        box-sizing: border-box;
+    }
+
+    form input.fullname {
+        float:left;
+        width: 50%;
+        box-sizing: border-box;
+    }
+
+    form input.email {
+        float:right;
+        width: 50%;
+        box-sizing: border-box;
+    }
+    
+    form input, textarea {
+        width:100%;
+        border:#DDD solid 2px;  
+    }
+     .submit-data {
+         width: 20rem;
+     }      
+ }
+     
+
+    
